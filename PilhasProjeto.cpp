@@ -1,5 +1,6 @@
 #include<iostream>
 #include<stack>
+
 using namespace std;
 
 void VerificarVazio(); //cria a assinatura da função
@@ -21,6 +22,7 @@ int main() {
 
     return 0;
 };
+
 void Limpar(){
     int r;
     printf("Voce quer apagar todos os itens? se sim digite [1] e para nao digite[2] \n");
@@ -36,6 +38,7 @@ void Limpar(){
         cout << "Nada foi retirado\n";
     }
 }
+
 void Add(){
     char item[50];
     cout << "Adicone um item: \n";
@@ -43,6 +46,7 @@ void Add(){
     
     cartas.push (item);
 }
+
 void VerificarVazio(){
     if (cartas.empty()) //verifica se a pilha está vazia
     {
